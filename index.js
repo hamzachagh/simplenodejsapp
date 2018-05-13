@@ -12,10 +12,6 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 
 
-
-
-
-
 res.render( 'index', {
   title: 'Unauthenticated',
   errorMessage: 'This app may only be loaded via Salesforce Marketing Cloud',
@@ -27,7 +23,7 @@ var app = express();
 app.set('port', process.env.PORT || 3000);
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', (req, res) => res.render('pages/index'))
+app.get('/', (req, res) => res.render('pages/index2'))
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
