@@ -23,4 +23,5 @@ org.authenticate({ username: 'hamzachagh2@gmail.com', password: 'Hamza_SE2018'},
 
 
 
-module.exports.org  = org;
+
+module.exports = org;
