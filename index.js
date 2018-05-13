@@ -14,7 +14,7 @@ var app = express();
   
   
 
-  router.get('/lead', function(req, res) {
+  router.get('/lead', function(req, res , next) {
 
     org.query({ query: "SELECT Id, name FROM Lead limit 1" })
       .then(function(results){
