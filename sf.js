@@ -14,19 +14,11 @@ var org = nforce.createConnection({
 
 
 
-// single-user mode
+///single-user mode
 org.authenticate({ username: 'hamzachagh2@gmail.com', password: 'Hamza_SE2018'}, function(err, resp){
     // the oauth object was stored in the connection object
     //if(!err) console.log('Cached Token: ' + org.oauth.access_token)
 
-    org.query({ query: 'SELECT Id, name FROM Lead limit 1 ' }, function(err, res) {
-        if(err) return console.error(err);
-        else 
-         
-        console.log(res.records);
-        
-
-      })
 });
 
 
