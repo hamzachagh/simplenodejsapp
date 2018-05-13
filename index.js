@@ -11,10 +11,10 @@ var app = express();
   app.get('/welcome', (req, res) => res.render('pages/welcome',{user:"Hamza CHAGH"}))
 
   
-  app.listen(PORT, () => console.log('Listening on ${ PORT }'))
+  
   
 
-  router.get('/accounts', function(req, res) {
+  router.get('/lead', function(req, res) {
 
     org.query({ query: "SELECT Id, name FROM Lead limit 1" })
       .then(function(results){
@@ -22,3 +22,6 @@ var app = express();
       });
   
   });
+
+
+  app.listen(PORT, () => console.log('Listening on ${ PORT }'))
