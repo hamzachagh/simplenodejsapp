@@ -18,7 +18,7 @@ var app = express();
 
     org.query({ query: "SELECT Id, name FROM Lead limit 1" })
       .then(function(results){
-        res.render('pages/lead', { records: results.records });
+        res.render('pages/index');
       });
   
   });
