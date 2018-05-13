@@ -7,10 +7,9 @@ var app = express();
   app.set('views', path.join(__dirname, 'views'))
   app.set('view engine', 'ejs')
   app.get('/', (req, res) => res.render('pages/index'))
+  app.get('/welcome', (req, res) => res.render('pages/welcome',{user:"Hamza CHAGH"}))
 
-  app.get('/welcome', function(req, res){ 
-  res.render('index',{user:"John Smith"}) 
-});
+  
   app.listen(PORT, () => console.log('Listening on ${ PORT }'))
   
 
