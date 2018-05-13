@@ -14,11 +14,11 @@ var app = express();
   
   
 
-  router.get('/lead', function(req, res , next) {
+  app.get('/lead', function(req, res , next) {
 
     org.query({ query: "SELECT Id, name FROM Lead limit 1" })
       .then(function(results){
-        res.render('pages/index');
+        res.render('pages/lead', { records: results.records });
       });
   
   });
