@@ -10,11 +10,14 @@
     
 
 
-      <% for(var i=0; i<records.length; i++) { 
-        
-            records[i]
-       
-     } %>
+      <h2>Loop</h2>
+
+<ul>
+    <% records.forEach(function(drink) { %>
+        <li><%= drink.Id %> </li>
+    <% }); %>
+</ul>
+
     
     </body>
     </html>
