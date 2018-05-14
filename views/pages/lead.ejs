@@ -9,16 +9,17 @@
     
     
 
+      <h2>Variable</h2>
+      <p><%= tagline %></p>
+    
 
       <h2>Loop</h2>
 
 <ul>
-    <% records.forEach(function(drink) { %>
-        <li><%= drink.Id %> </li>
+    <% drinks.forEach(function(drink) { %>
+        <li><%= drink.name %> - <%= drink.drunkness %></li>
     <% }); %>
 </ul>
-
-    
     </body>
     </html>
     

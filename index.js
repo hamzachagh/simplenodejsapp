@@ -14,14 +14,28 @@ var app = express();
   
   
 
-  app.get('/lead', function(req, res , next) {
+  /*app.get('/lead', function(req, res , next) {
 
     org.query({ query: "SELECT Id, name FROM Lead limit 1" })
       .then(function(results){
         res.render('pages/lead', { records: results.records });
       });
   
-  });
+  });*/
 
+
+app.get('/lead', function(req, res) {
+    var drinks = [
+        { name: 'Bloody Mary', drunkness: 3 },
+        { name: 'Martini', drunkness: 5 },
+        { name: 'Scotch', drunkness: 10 }
+    ];
+    var tagline = "Any code of your own that you haven't looked at for six or more months might as well have been written by someone else.";
+
+    res.render('pages/lead', {
+        drinks: drinks,
+        tagline: tagline
+    });
+});
 
   app.listen(PORT, () => console.log('Listening on ${ PORT }'))
