@@ -23,7 +23,7 @@ org.authenticate({ username: 'hamzachagh2@gmail.com', password: 'Hamza_SE2018'},
         if(err) return console.error(err);
         else 
          
-        console.log('$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ '+res.records.len);
+        console.log('$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ '+res.records.length);
         
 
       })
