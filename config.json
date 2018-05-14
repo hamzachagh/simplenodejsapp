@@ -1,0 +1,37 @@
+{
+    "workflowApiVersion": "1.1",
+    "metaData": {
+       "icon": "images/inwi.png",
+       "category": "Message"
+    },
+    "type": "REST",
+    "lang": {
+       "en-US": {
+           "name": "Send SMS",
+           "description": "REST activity for Journey Builder"
+       }
+    },
+    "arguments": {
+        "execute": {
+            "inArguments": [],
+            "outArguments": [],
+            "url": "https://MCcustomActivity.herokuapp.com/execute"
+        }
+    },
+    "configurationArguments": {
+        "applicationExtensionKey": "",
+         "publish": {
+          "url": "https://MCcustomActivity.herokuapp.com/publish"
+         }
+    },
+    "wizardSteps": [
+       { "label": "Step 1", "key": "step1" },
+       { "label": "Step 2", "key": "step2", "active": false }
+    ],
+    "userInterfaces": {
+       "configModal": {
+           "height": 200,
+           "width": 300
+       }
+    }
+}
