@@ -15,7 +15,7 @@ app.get('/lead', function(req, res , next) {
   org.query({ query: "SELECT Id, name FROM Lead limit 100" })
     .then(function(results){
 
-    // parse json
+    // parse json f
 		var jsonParsed = JSON.parse(JSON.stringify(results.records));
 		// access elements
     //console.log("s office phone number is " + jsonParsed[0].name);
