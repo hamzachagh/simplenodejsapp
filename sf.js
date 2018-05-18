@@ -25,7 +25,6 @@ var org = nforce.createConnection({
 
 
 
-
 /* //single-user mode
 org.authenticate({ username: 'hamzachagh2@gmail.com', password: 'Hamza_SE2018'}, function(err, resp){
   if(!err) console.log('Successfully connected to Salesforce. Cached token: ' + org.oauth.access_token);
