@@ -20,7 +20,7 @@ app.get('/lead', function(req, res , next) {
       // parse json
 		var jsonParsed = JSON.parse(JSON.stringify(results.records));
 		// access elements
-    console.log("s office phone number is " + jsonParsed);
+    console.log("s office phone number is " + jsonParsed[0]);
     
     console.log('test results --------------- '+JSON.stringify(results.records));
       res.render('pages/lead', { records: JSON.stringify(results.records) });
