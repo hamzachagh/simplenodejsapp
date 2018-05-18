@@ -26,7 +26,7 @@ app.get('/lead', function(req, res , next) {
     
     //console.log('test results --------------- '+JSON.stringify(results.records));
       res.render('pages/lead', { records: JSON.stringify(results.records) , leads:jsonParsed });
-    });
+    }); 
     
 });
 
