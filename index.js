@@ -17,7 +17,7 @@ app.get('/lead', function(req, res , next) {
 
 
       // parse json
-		var jsonParsed = JSON.parse(results);
+		var jsonParsed = JSON.parse(JSON.stringify(results.records));
 
 		// access elements
     console.log("s office phone number is " + jsonParsed.results[0]);
