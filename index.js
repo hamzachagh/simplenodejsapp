@@ -12,7 +12,7 @@ app.get('/welcome', (req, res) => res.render('pages/welcome',{user:"Hamza CHAGH"
 
 app.get('/lead', function(req, res , next) {
 
-  org.query({ query: "SELECT Id, name FROM Lead limit 5" })
+  org.query({ query: "SELECT Id, name FROM Lead limit 100" })
     .then(function(results){
 
 
